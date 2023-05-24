@@ -1,0 +1,63 @@
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>WebGL School Report 01.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script src="../scripts/app.js"></script>
+  </head>
+  <body>
+    <div data-webgl></div>
+    <ul>
+      <li>
+        <button type="button" data-sphere>SPHERE</button>
+      </li>
+      <li>
+        <button type="button" data-reset>RESET</button>
+      </li>
+    </ul>
+  </body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  div {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  ul {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    gap: 0 40px;
+    justify-content: center;
+    left: 0;
+    list-style: none;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  button {
+    background: #212121;
+    border-radius: 4px;
+    border: 1px solid #ab987a;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    height: 60px;
+    letter-spacing: 0.1em;
+    pointer-events: auto;
+    width: 250px;
+  }
+</style>
